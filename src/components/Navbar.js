@@ -35,20 +35,20 @@ const Navbar = () => {
             </p>
           </a>
         </div>
-        <div>
-          <ul className="invisible lg:visible flex justify-evenly  ease-in-out duration-300 gap-10 font-medium text-base">
-            <li className=" content-center">
+        <div className="hidden lg:flex">
+          <ul className="flex justify-evenly gap-10 font-medium text-base">
+            <li className="content-center">
               <div className="dropdown p-0 m-0 dropdown-hover">
                 <div
                   tabIndex={0}
                   role="button"
-                  className=" m-1 hover:text-orange-500"
+                  className="m-1 hover:text-orange-500"
                 >
                   Home +
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content  z-[1] menu p-2 text-black shadow bg-base-100 w-52"
+                  className="dropdown-content z-[1] menu p-2 text-black shadow bg-base-100 w-52"
                   style={{ marginLeft: "-50px", marginBottom: "-30px" }}
                 >
                   <li>
@@ -60,7 +60,6 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-
             <li className="content-center">About us</li>
             <li className="content-center">Page +</li>
             <li className="content-center">Services +</li>
@@ -94,7 +93,7 @@ const Navbar = () => {
           className={`fixed overflow-y-auto top-0 right-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
             isFirstDrawerOpen ? "translate-x-0" : "translate-x-full"
           }`}
-          style={{ width: "400px", transition: "0.5s" }}
+          style={{ width: "80%", maxWidth: "400px", transition: "0.5s" }}
         >
           <div className="bg-black flex justify-between">
             <div>
@@ -148,7 +147,7 @@ const Navbar = () => {
           className={`fixed overflow-y-auto top-0 left-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
             isSecondDrawerOpen ? "translate-x-0" : "-translate-x-full"
           }`}
-          style={{ width: "300px", transition: "0.5s" }}
+          style={{ width: "80%", maxWidth: "300px", transition: "0.5s" }}
         >
           <div>
             <div className="text-center my-8">
@@ -160,11 +159,11 @@ const Navbar = () => {
               </a>
             </div>
             <ul className="flex flex-col justify-evenly font-bold text-base">
-              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300">
                 Home
               </li>
               <hr />
-              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300">
                 About us
               </li>
               <hr />
@@ -176,7 +175,7 @@ const Navbar = () => {
                 Services
               </li>
               <hr />
-              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300">
                 Portfolio
               </li>
               <hr />

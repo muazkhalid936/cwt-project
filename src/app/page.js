@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div
         style={{ backgroundColor: "#e8f1f9" }}
-        className="flex flex-col lg:flex-row-reverse gap-0 justify-between"
+        className="flex flex-col lg:flex-row-reverse gap-0 w-full justify-between"
       >
         <div className="w-92 content-center mb-10 mt-10 lg:mb-0">
           <img
