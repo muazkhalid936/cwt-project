@@ -1,22 +1,33 @@
-"use client"
+"use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { CgMenuRightAlt } from "react-icons/cg";
 
 const Navbar = () => {
-  const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [isFirstDrawerOpen, setFirstDrawerOpen] = useState(false);
+  const [isSecondDrawerOpen, setSecondDrawerOpen] = useState(false);
 
-  const toggleDrawer = () => {
-    setDrawerOpen(!isDrawerOpen);
+  const toggleFirstDrawer = () => {
+    setFirstDrawerOpen(!isFirstDrawerOpen);
   };
 
-  const closeDrawer = () => {
-    setDrawerOpen(false);
+  const toggleSecondDrawer = () => {
+    setSecondDrawerOpen(!isSecondDrawerOpen);
+  };
+
+  const closeFirstDrawer = () => {
+    setFirstDrawerOpen(false);
+  };
+
+  const closeSecondDrawer = () => {
+    setSecondDrawerOpen(false);
   };
 
   return (
     <>
-      <div className="mt-10 ml-4 flex justify-between mb-10">
-        <div>
+      <div className="mt-10 ml-10 lg:ml-4 flex justify-between mb-10">
+        <div className="">
           <a href="/" className="font-black">
             <p>
               <span className="text-2xl text-orange-500">CW</span>
@@ -24,46 +35,132 @@ const Navbar = () => {
             </p>
           </a>
         </div>
-        <ul className="flex justify-evenly gap-10 font-medium text-base">
-          <li className="content-center">Home +</li>
-          <li className="content-center">About us</li>
-          <li className="content-center">Page +</li>
-          <li className="content-center">Services +</li>
-          <li className="content-center">Portfolio +</li>
-          <li className="content-center">Contact Us</li>
-          <li className="content-center">
-            <IoMenu
-              className="text-4xl items-center cursor-pointer"
-              onClick={toggleDrawer}
-            />
-          </li>
-        </ul>
-      </div>
+        <div className="">
+          <ul className="invisible lg:visible flex justify-evenly gap-10 font-medium text-base">
+            <li className="content-center">Home +</li>
+            <li className="content-center">About us</li>
+            <li className="content-center">Page +</li>
+            <li className="content-center">Services +</li>
+            <li className="content-center">Portfolio +</li>
+            <li className="content-center">Contact Us</li>
+            <li className="content-center">
+              <IoMenu
+                className="text-4xl items-center cursor-pointer"
+                onClick={toggleFirstDrawer}
+              />
+            </li>
+          </ul>
+        </div>
 
-      {isDrawerOpen && (
+        {isFirstDrawerOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            onClick={closeFirstDrawer}
+          ></div>
+        )}
+
+        {isSecondDrawerOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            onClick={closeSecondDrawer}
+          ></div>
+        )}
+
+        {/* First Drawer */}
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
-          onClick={closeDrawer}
-        ></div>
-      )}
+          className={`fixed overflow-y-auto top-0 right-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
+            isFirstDrawerOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+          style={{ width: "400px", transition: "0.5s" }}
+        >
+          <div className="bg-black flex justify-between">
+            <div>
+              <p className="text-white p-4 font-black">First Drawer</p>
+            </div>
+            <button onClick={closeFirstDrawer} className="p-4 text-white">
+              Close
+            </button>
+          </div>
+          <div>
+            <div className="flex text-center justify-center my-10">
+              <Image
+                src={"/user.png"}
+                className="rounded-full"
+                width={200}
+                height={200}
+                alt="User Profile"
+              />
+            </div>
+            <div className="ml-5">
+              <div className="flex flex-col mb-5 gap-4">
+                <label className="font-black text-2xl">Name : </label>
+                <span>Muaz Khalid</span>
+              </div>
+              <div className="flex flex-col mb-5 gap-4">
+                <label className="font-black text-2xl">Email : </label>
+                <span>Muazkhalid936@gmail.com</span>
+              </div>
+              <div className="flex flex-col mb-5 gap-4">
+                <label className="font-black text-2xl">Contact Info: </label>
+                <span>+92 348 4600631</span>
+              </div>
+              <div className="flex flex-col mb-5 gap-4">
+                <label className="font-black text-2xl">Address : </label>
+                <span>4155 Mann Island, Liverpool L3, United Kingdom.</span>
+              </div>
+              <div className="flex flex-col mb-5 gap-4">
+                <label className="font-black text-2xl">About Me : </label>
+                <span>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div
-        className={`fixed top-0 right-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
-          isDrawerOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-        style={{ width: "300px", transition: "0.5s" }}
-      >
-        <button onClick={closeDrawer} className="p-4">
-          Close
-        </button>
-        <ul className="flex flex-col p-4 space-y-4">
-          <li>Home</li>
-          <li>About us</li>
-          <li>Page</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact Us</li>
-        </ul>
+        {/* Second Drawer */}
+        <div
+          className={`fixed overflow-y-auto top-0 left-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
+            isSecondDrawerOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+          style={{ width: "300px", transition: "0.5s" }}
+        >
+          <div>
+            <div className="text-center my-8">
+              <a href="/" className="font-black">
+                <p>
+                  <span className="text-2xl text-orange-500">CW</span>
+                  <span className="text-2xl">T</span>
+                </p>
+              </a>
+            </div>
+            <ul className=" flex flex-col justify-evenly font-bold text-base">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ">
+                Home
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3">About us</li>
+              <hr />
+              <li className="content-center ml-2 my-3">Page</li>
+              <hr />
+              <li className="content-center ml-2 my-3">Services</li>
+              <hr />
+              <li className="content-center ml-2 my-3">Portfolio</li>
+              <hr />
+              <li className="content-center ml-2 my-3">Contact Us</li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+
+        <div className="block mr-10 lg:hidden">
+          <CgMenuRightAlt
+            className="text-3xl cursor-pointer"
+            onClick={toggleSecondDrawer}
+          />
+        </div>
       </div>
     </>
   );
