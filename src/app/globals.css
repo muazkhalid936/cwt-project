@@ -42,9 +42,31 @@
   border-radius: 50%;
   transition:0.5s ; /* Added transition-delay */
 }
+.about-icon {
+  background-color: white;
+  padding: 7px;
+  color:#ccc;
+  font-size: 10px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  border-radius: 50%;
+  transition:0.5s ; /* Added transition-delay */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+
+}
 
 .social-icon:hover  {
   transform: translateY(-5px); /* Adjust the value as needed */
   background-color: #ff5722; /* Orange color */
+  
+}
+
+.about-icon:hover  {
+  transform: translateY(-5px); /* Adjust the value as needed */
+  background-color: #ff5722; /* Orange color */
+  color: white;
   
 }
