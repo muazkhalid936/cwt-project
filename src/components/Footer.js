@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer py-10 px-8 lg:px-2 bg-black h-auto footer-color pt-20">
-        <nav className="w-auto lg:w-80 p-0">
+        <nav className="w-auto lg:w-72 p-0">
           <div className="">
             <a href="/" className="font-black">
               <p>
@@ -19,7 +19,7 @@ const Footer = () => {
                 <span className="text-3xl text-orange-500">T</span>
               </p>
             </a>
-            <p className="para">
+            <p className="para mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               elementum dui in suscipit congue.
             </p>
@@ -41,7 +41,7 @@ const Footer = () => {
             <h6 className=" font-bold text-2xl foter-title">Get In Touch</h6>
           </div>
           <hr />
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row mb-3 gap-2">
             <div className="">
               <FaLocationDot className="text-3xl text-gray-700 mt-3" />{" "}
             </div>
@@ -50,7 +50,7 @@ const Footer = () => {
               New York, USA
             </div>
           </div>
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row  mb-3 gap-2">
             <div>
               <LuMail className="text-3xl text-gray-700 mt-3" />{" "}
             </div>
@@ -59,7 +59,7 @@ const Footer = () => {
               Muazkhalid936@gmail.com{" "}
             </div>
           </div>
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row mb-3 gap-2">
             <div className="">
               <MdOutlinePhoneAndroid className="text-3xl text-gray-700 mt-3" />{" "}
             </div>

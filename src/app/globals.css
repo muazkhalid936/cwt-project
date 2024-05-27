@@ -25,7 +25,8 @@
   color:#ccc
 }
 .para{
-  font-size: 16px
+  font-size: 16px;
+  line-height: 1cm;
 }
 
 .social-icon {
