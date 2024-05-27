@@ -28,7 +28,13 @@
   font-size: 16px;
   line-height: 1cm;
 }
-
+.about-icon{
+  background-color: white;
+  padding: 40px;
+  font-size: 3rem;
+  border-radius: 50%;
+  transition: 0.5s;
+}
 .social-icon {
   background-color: #2b3856;
   padding: 10px;
@@ -37,7 +43,7 @@
   transition:0.5s ; /* Added transition-delay */
 }
 
-.social-icon:hover {
+.social-icon:hover  {
   transform: translateY(-5px); /* Adjust the value as needed */
   background-color: #ff5722; /* Orange color */
   

@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import "./globals.css";
 export default function Home() {
   return (
@@ -32,6 +33,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <About />
     </>
   );
 }
