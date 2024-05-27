@@ -48,14 +48,26 @@ const Navbar = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content z-[1] menu p-2 text-black shadow bg-base-100 w-52"
+                  className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
                   style={{ marginLeft: "-50px", marginBottom: "-30px" }}
                 >
                   <li>
-                    <a>Item 1</a>
+                    <a href="/">Home Style 01</a>
                   </li>
                   <li>
-                    <a>Item 2</a>
+                    <a href="/Style02">Home Style 02</a>
+                  </li>
+                  <li>
+                    <a>Home Style 03</a>
+                  </li>
+                  <li>
+                    <a>Home Style 04</a>
+                  </li>
+                  <li>
+                    <a>Home Style 05</a>
+                  </li>
+                  <li>
+                    <a>Home Style 06</a>
                   </li>
                 </ul>
               </div>
