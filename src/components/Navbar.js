@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="mt-10 ml-10 lg:ml-4 flex justify-between mb-10">
-        <div className="">
+      <div className="mt-10 ml-10 lg:ml-4 bg-transparent flex justify-between mb-4">
+        <div>
           <a href="/" className="font-black">
             <p>
               <span className="text-2xl text-orange-500">CW</span>
@@ -35,9 +35,32 @@ const Navbar = () => {
             </p>
           </a>
         </div>
-        <div className="">
-          <ul className="invisible lg:visible flex justify-evenly gap-10 font-medium text-base">
-            <li className="content-center">Home +</li>
+        <div>
+          <ul className="invisible lg:visible flex justify-evenly  ease-in-out duration-300 gap-10 font-medium text-base">
+            <li className=" content-center">
+              <div className="dropdown p-0 m-0 dropdown-hover">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className=" m-1 hover:text-orange-500"
+                >
+                  Home +
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content  z-[1] menu p-2 text-black shadow bg-base-100 w-52"
+                  style={{ marginLeft: "-50px", marginBottom: "-30px" }}
+                >
+                  <li>
+                    <a>Item 1</a>
+                  </li>
+                  <li>
+                    <a>Item 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
             <li className="content-center">About us</li>
             <li className="content-center">Page +</li>
             <li className="content-center">Services +</li>
@@ -136,20 +159,30 @@ const Navbar = () => {
                 </p>
               </a>
             </div>
-            <ul className=" flex flex-col justify-evenly font-bold text-base">
-              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ">
+            <ul className="flex flex-col justify-evenly font-bold text-base">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ">
                 Home
               </li>
               <hr />
-              <li className="content-center ml-2 my-3">About us</li>
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ">
+                About us
+              </li>
               <hr />
-              <li className="content-center ml-2 my-3">Page</li>
+              <li className="content-center active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ml-2 my-3">
+                Page
+              </li>
               <hr />
-              <li className="content-center ml-2 my-3">Services</li>
+              <li className="active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 content-center ml-2 my-3">
+                Services
+              </li>
               <hr />
-              <li className="content-center ml-2 my-3">Portfolio</li>
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ">
+                Portfolio
+              </li>
               <hr />
-              <li className="content-center ml-2 my-3">Contact Us</li>
+              <li className="content-center active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ml-2 my-3">
+                Contact Us
+              </li>
               <hr />
             </ul>
           </div>
