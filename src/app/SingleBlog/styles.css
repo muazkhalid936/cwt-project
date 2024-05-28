@@ -1,0 +1,28 @@
+.p1 {
+  width: 65%;
+}
+.p2 {
+  width: 35%;
+}
+.blog-img {
+  width: 300px;
+}
+
+@media (min-width: 640px) {
+  .p1 {
+    width: 90%;
+    align-items: center;
+  }
+  .blog-img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-img {
+    /* adjust image size for larger screens */
+
+    width: 400px;
+    height: 200px;
+  }
+}
