@@ -2,11 +2,15 @@ import React from "react";
 import { FaUser } from "react-icons/fa6";
 import { FaTags } from "react-icons/fa6";
 
-const BlogCard = () => {
+const BlogCard = (params) => {
   return (
-    <div className="card w-60 md:w-80 lg:w-96 bg-base-100 shadow-xl">
+    <div className="card w-3/4 mb-4 rounded-none lg:w-96 bg-base-100 shadow-xl">
       <figure>
-        <img src="/1.jpg" alt="Shoes" />
+        <img
+          src={`${params.i}.jpg`}
+          alt="Shoes"
+          className="hover:scale-125 transition duration-500 ease-in-out"
+        />
       </figure>
       <div className="h-1 bg-orange-500 w-full"></div>
       <div className="card-body p-4">
@@ -40,8 +44,8 @@ const BlogCard = () => {
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore...
         </p>
-        <div className="card-actions justify-end">
-          <div className="bg-orange-500 font-bold hover:bg-blue-600  ease-in-out duration-500 flex gap-2 text-white rounded-full  py-5 w-32 justify-center text-center">
+        <div className="card-actions justify-start">
+          <div className="bg-orange-500 font-bold hover:bg-blue-600  ease-in-out duration-500 flex gap-2 text-white rounded-full  py-3 w-32 justify-center text-sm text-center">
             READ DETAILS
           </div>
         </div>

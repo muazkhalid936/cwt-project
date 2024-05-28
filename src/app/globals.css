@@ -5,6 +5,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .img-hero {
   height: 600px;
 }
@@ -13,7 +14,11 @@
     height: 370px;
     margin-bottom: 50px;
   }
+  .service-card {
+    width: 75%;
+  }
 }
+
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -21,14 +26,17 @@
 .footer-color {
   color: #999;
 }
+
 .foter-title {
   font-family: "Red Hat Mono", sans-serif;
   color: #ccc;
 }
+
 .para {
   font-size: 16px;
   line-height: 1cm;
 }
+
 .about-icon {
   background-color: white;
   padding: 40px;
@@ -36,6 +44,7 @@
   border-radius: 50%;
   transition: 0.5s;
 }
+
 .social-icon {
   background-color: #2b3856;
   padding: 10px;
@@ -43,6 +52,7 @@
   border-radius: 50%;
   transition: 0.5s; /* Added transition-delay */
 }
+
 .about-icon {
   background-color: white;
   padding: 7px;
@@ -68,29 +78,38 @@
   background-color: #ff5722; /* Orange color */
   color: white;
 }
-.circle{
+
+.circle {
   transition: 0.5s;
 }
 .circle:hover {
   width: 500px;
   height: 500px;
 }
+
 .service-card {
   width: 350px;
 }
+@media (max-width: 640px) {
+  .service-card {
+    width: 80%;
+  }
+}
+
 .num {
   font-family: "Londrina Outline", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.call{
+
+.call {
   height: 450px;
 }
-.call-img{  
+.call-img {
   height: 450px;
   width: 300px;
   margin-bottom: 0px;
 }
-.textarea1{
+.textarea1 {
   width: 800px;
 }

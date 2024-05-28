@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 const Myservices = () => {
   return (
     <>
-      <div className="h-auto" style={{ backgroundColor: "#e8f1f9" }}>
+      <div className="h-auto pb-10" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="text-center py-20">
           <div className="font-bold text-3xl">My Services</div>
           <div className="mt-4">
@@ -12,7 +12,7 @@ const Myservices = () => {
             amet maximus est.
           </div>
         </div>
-        <div className="flex  flex-wrap gap-5  justify-center">
+        <div className="flex  flex-wrap gap-3  justify-center">
           <ServiceCard />
           <ServiceCard />
           <ServiceCard />
