@@ -1,8 +1,8 @@
 .p1 {
-  width: 65%;
+  width: 55%;
 }
 .p2 {
-  width: 35%;
+  width: 45%;
 }
 .blog-img {
   width: 300px;
@@ -13,6 +13,7 @@
     width: 90%;
     align-items: center;
   }
+
   .blog-img {
     width: 80%;
   }

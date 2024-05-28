@@ -127,7 +127,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="p2 text-center ">asd</div>
+        <div className="p2 text-center bg-red-400">asd</div>
       </div>
     </>
   );
