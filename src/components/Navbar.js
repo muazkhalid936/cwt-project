@@ -109,7 +109,7 @@ const Navbar = () => {
         >
           <div className="bg-black flex justify-between">
             <div>
-              <p className="text-white p-4 font-black">First Drawer</p>
+              <p className="text-white p-4 font-black">About Us</p>
             </div>
             <button onClick={closeFirstDrawer} className="p-4 text-white">
               Close
