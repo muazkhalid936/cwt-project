@@ -3,6 +3,7 @@ import "./globals.css";
 import Myservices from "@/components/Myservices";
 import FloatingX from "@/components/FloatingX";
 import Call from "@/components/Call";
+import Blogs from "@/components/Blogs";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
       <About />
       <Call />
       <Myservices />
+      <Blogs />
     </div>
   );
 }
