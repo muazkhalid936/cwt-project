@@ -36,7 +36,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="hidden lg:flex">
-          <ul className="flex justify-evenly gap-10 font-medium text-base">
+          <ul className="flex justify-evenly gap-5 font-medium text-sm">
             <li className="content-center">
               <div className="dropdown p-0 m-0 dropdown-hover">
                 <div
@@ -73,9 +73,124 @@ const Navbar = () => {
               </div>
             </li>
             <li className="content-center">About us</li>
-            <li className="content-center">Page +</li>
-            <li className="content-center">Services +</li>
-            <li className="content-center">Portfolio +</li>
+            <li className="content-center">
+              <div className="dropdown p-0 m-0 dropdown-hover">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="m-1 hover:text-orange-500"
+                >
+                  Page +
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
+                  style={{ marginLeft: "-50px", marginBottom: "-30px" }}
+                >
+                  {/* Add the corresponding links here */}
+                  <li>
+                    <a href="/About">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/Contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="/Pricing">Pricing Plane</a>
+                  </li>
+                  <li>
+                    <a href="/404">404 Error</a>
+                  </li>
+                  {/* Add more items as needed */}
+                </ul>
+              </div>
+            </li>
+            <li className="content-center">
+              <div className="dropdown p-0 m-0 dropdown-hover">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="m-1 hover:text-orange-500"
+                >
+                  Services +
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
+                  style={{ marginLeft: "-50px", marginBottom: "-30px" }}
+                >
+                  {/* Add the corresponding links here */}
+                  <li>
+                    <a href="/Services">Service</a>
+                  </li>
+                  <li>
+                    <a href="/Service-details">Service Details</a>
+                  </li>
+                  {/* Add more items as needed */}
+                </ul>
+              </div>
+            </li>
+            <li className="content-center">
+              <div className="dropdown p-0 m-0 dropdown-hover">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="m-1 hover:text-orange-500"
+                >
+                  Portfolio +
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
+                  style={{ marginLeft: "-50px", marginBottom: "-30px" }}
+                >
+                  {/* Add the corresponding links here */}
+                  <li>
+                    <a href="/Portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="/Portfolio2">Portfolio Column 2</a>
+                  </li>
+                  <li>
+                    <a href="/Portfolio-details">Portfolio Details</a>
+                  </li>
+                  {/* Add more items as needed */}
+                </ul>
+              </div>
+            </li>
+            <li className="content-center">
+              <div className="dropdown p-0 m-0 dropdown-hover">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="m-1 hover:text-orange-500"
+                >
+                  Blog +
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
+                  style={{ marginLeft: "-50px", marginBottom: "-30px" }}
+                >
+                  {/* Add the corresponding links here */}
+                  <li>
+                    <a href="/BlogPage">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/BlogGrid">Blog Grid</a>
+                  </li>
+                  <li>
+                    <a href="/BlogLeft">Blog Left Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="/BlogRight">Blog Right Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="/Blogdetails">Blog Details</a>
+                  </li>
+                  {/* Add more items as needed */}
+                </ul>
+              </div>
+            </li>
             <li className="content-center">Contact Us</li>
             <li className="content-center">
               <IoMenu
