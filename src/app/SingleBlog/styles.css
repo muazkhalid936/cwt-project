@@ -44,7 +44,7 @@
 }
 .vertical-line {
   border-left: 1px solid #ccc; /* Adjust thickness and color as needed */
-  height: 20px; /* Adjust height as needed */
+  height: 40px; /* Adjust height as needed */
   margin-left: 10px; /* Adjust margin as needed */
   margin-right: 10px; /* Adjust margin as needed */
 }
