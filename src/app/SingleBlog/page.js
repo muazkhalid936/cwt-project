@@ -232,7 +232,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className=" w-full lg:w-p2 flex gap-2 flex-col ">
+        <div className=" w-full lg:w-p2 px-5  lg:px-0 flex gap-2 flex-col ">
 
 
 
@@ -255,6 +255,23 @@ const Page = () => {
           </div>
 
 
+          <div className=" border w-full">
+            <div className=" flex my-5">
+              <div className=" mt-2 w-3 h-2 bg-black"></div>{" "}
+              <h2 className="ml-5 font-medium">Search</h2>
+            </div>
+            <div class="mx-10 border ease-in-out  h-12 duration-500 active:border-orange-500 focus:border-orange-500 mb-4 flex items-center">
+              <input
+                type="text"
+                class="flex-grow p-2 outline-none"
+                placeholder="Search Here.."
+              />
+              <div class="vertical-line"></div>
+              <button class="p-2">
+               <FaMagnifyingGlass  className="w-4 mr-2  text-2xl hover:text-orange-500 ease-in-out duration-500 h-5"/>
+              </button>
+            </div>
+          </div>
 
 
 
