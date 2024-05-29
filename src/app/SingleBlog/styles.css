@@ -34,6 +34,14 @@
   }
 }
 
+.aa{
+  border-bottom:1px dashed rgb(216, 214, 214) ;
+}
+
+
+.datee{
+  color: black  !important;
+}
 @media (min-width: 1024px) {
   .blog-img {
     /* adjust image size for larger screens */
