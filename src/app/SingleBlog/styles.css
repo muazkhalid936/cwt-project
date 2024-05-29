@@ -7,6 +7,26 @@
 .blog-img {
   width: 300px;
 }
+.com-img {
+  width: 20%;
+}
+.com {
+  width: 150%;
+}
+@media (max-width: 767px) {
+  .equal-height-mobile {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .com-img {
+    width: 30%;
+  }
+  .com {
+    width: 150%;
+  }
+}
 
 @media (min-width: 640px) {
   .p1 {
