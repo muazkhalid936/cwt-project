@@ -232,7 +232,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className=" w-full lg:w-p2 flex gap-2 flex-cols ">
+        <div className=" w-full lg:w-p2 flex gap-2 flex-col ">
 
 
 
