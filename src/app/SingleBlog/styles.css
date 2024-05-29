@@ -1,9 +1,4 @@
-.p1 {
-  width: 55%;
-}
-.p2 {
-  width: 45%;
-}
+
 .blog-img {
   width: 300px;
 }
@@ -46,4 +41,10 @@
     width: 400px;
     height: 200px;
   }
+}
+.vertical-line {
+  border-left: 1px solid #ccc; /* Adjust thickness and color as needed */
+  height: 20px; /* Adjust height as needed */
+  margin-left: 10px; /* Adjust margin as needed */
+  margin-right: 10px; /* Adjust margin as needed */
 }

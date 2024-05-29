@@ -24,8 +24,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row mx-2 my-20">
-        <div className="p1 mx-auto lg:mx-0">
+      <div className="flex flex-col gap-5 justify-center px-0 lg:mx-auto lg:flex-row mx-2 my-20">
+        <div className="w-p1 mx-auto lg:mx-0">
           <div className="border">
             <div>
               <img src="/1.jpg" className="w-full" alt="Blog Main" />
@@ -231,7 +231,29 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="p2 text-center ">asd</div>
+        <div className=" w-full lg:w-p2 ">
+          <div className=" border w-full">
+            <div className=" flex my-5">
+              <div className=" mt-2 w-3 h-2 bg-black"></div>{" "}
+              <h2 className="ml-5 font-medium">Search</h2>
+            </div>
+            <div class="mx-10 border ease-in-out duration-500 active:border-orange-500 mb-10 flex items-center">
+              <input
+                type="text"
+                class="flex-grow p-2 outline-none"
+                placeholder="Search Here.."
+              />
+              <div class="vertical-line"></div>
+              <button class="p-2">
+                <img
+                  src="https://img.icons8.com/material-rounded/24/000000/search.png"
+                  alt="Search"
+                  class="w-4 h-4"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
