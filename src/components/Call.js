@@ -4,7 +4,10 @@ import { MdLocalPhone } from "react-icons/md";
 
 const Call = () => {
   return (
-    <div className="bg-black call flex  p-0 lg:pl-60 items-center">
+    <div className=" flex justify-center bg-black">
+
+    
+    <div className="bg-black call flex   p-0 lg:pl-60 items-center">
       <div className="text-center textarea1">
         <div className="py-10 text-3xl text-white">Any Question You Have</div>
         <div className="font-bold  text-6xl lg:text-8xl md:text-7xl text-white">
@@ -22,6 +25,7 @@ const Call = () => {
       <div className="call-img-cont hidden  md:hidden lg:block">
         <img src="/call.png" className="call-img" />
       </div>
+    </div>
     </div>
   );
 };
