@@ -18,6 +18,13 @@
     width: 75%;
   }
 }
+@media (max-width:1280px){
+.asd{
+  height: 450px;
+}
+
+}
+
 
 .font-roboto {
   font-family: "Roboto", sans-serif;

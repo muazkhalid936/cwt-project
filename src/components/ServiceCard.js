@@ -4,7 +4,7 @@ import { MdOutlineComputer } from "react-icons/md";
 
 const ServiceCard = () => {
   return (
-    <div className="bg-white mt-10  service-card overflow-hidden relative">
+    <div className="bg-white mt-10 asd shadow service-card overflow-hidden relative">
       <div className="absolute top-0 right-0 mt-2 mr-2 z-index-[-1]">
         <div className="bg-orange-500 circle text-right hover:z-10 -mt-20 -mr-20 w-40 h-40 rounded-full flex justify-center items-center">
           <span className="text-white text-3xl mt-10 mr-10 font-bold">01</span>

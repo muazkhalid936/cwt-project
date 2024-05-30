@@ -15,7 +15,7 @@ const Page = () => {
               Home
             </a>
             <span>/</span>
-            <span className="font-bold text-gray-500">Conact Us</span>
+            <span className="font-bold text-gray-500">Contact Us</span>
           </div>
         </div>
       </div>
