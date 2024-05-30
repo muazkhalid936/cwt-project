@@ -185,7 +185,7 @@ const Navbar = () => {
                     <a href="/BlogRight">Blog Right Sidebar</a>
                   </li>
                   <li>
-                    <a href="/Blogdetails">Blog Details</a>
+                    <a href="/SingleBlog">Blog Details</a>
                   </li>
                   {/* Add more items as needed */}
                 </ul>
