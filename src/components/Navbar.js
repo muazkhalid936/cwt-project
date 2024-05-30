@@ -191,7 +191,9 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li className="content-center">Contact Us</li>
+            <li className="content-center">
+              <a href="/Contact" className="hover:text-orange-500 ease-in-out duration-500">Contact Us</a>
+            </li>
             <li className="content-center">
               <IoMenu
                 className="text-4xl items-center cursor-pointer"
