@@ -3,7 +3,7 @@
 import { FaRegEye } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
 import { useState } from "react";
-
+import "./styles.css"
 const images = [
   {
     src: "/images/1.jpg",
@@ -71,7 +71,7 @@ const ImageGallery = () => {
           </button>
           <button
             onClick={() => setFilter("web")}
-            className={`mx-2 px-4 py-2 rounded-full transition duration-300 ${
+            className={`mx-2 px-4 py-2 rounded-full ease-in-out duration-500 ${
               filter === "web"
                 ? "bg-gradient-to-r from-orange-400 to-red-800 text-white"
                 : "bg-transparent text-black"
@@ -101,13 +101,13 @@ const ImageGallery = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-5 transition duration-500">
+      <div className="flex flex-wrap justify-center gap-5 ease-in-out duration-500">
         {filteredImages.map((image, index) => (
-          <div key={index} className="relative w-96 h-64 overflow-hidden group">
+          <div key={index} className="relative overflow-hidden group">
             <img
               src={image.src}
               alt={`Image ${index}`}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="img-w object-cover transition-transform duration-500 "
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <span>{image.caption}</span>
