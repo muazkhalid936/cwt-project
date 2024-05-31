@@ -54,6 +54,14 @@
     height: 200px;
   }
 }
+@media (max-width: 1280px) {
+  .asd {
+    /* adjust image size for larger screens */
+
+  
+    height: 70px;
+  }
+}
 .vertical-line {
   border-left: 1px solid #ccc; /* Adjust thickness and color as needed */
   height: 40px; /* Adjust height as needed */
@@ -61,9 +69,6 @@
   margin-right: 10px; /* Adjust margin as needed */
 }
 
-
-@media (max-width:1280px){
-  .asd{
-    height: 70px;
-  }
+.bb:hover{
+  color: white;
 }

@@ -106,8 +106,8 @@ const Page = () => {
 
         <div className=" w-full  lg:w-port2 px-5  lg:px-0 flex gap-2 flex-col ">
           <div className=" border w-full">
-            <div className="justify-center asd mx-5 flex my-5">
-              <h2 className=" font-black text-2xl">Infromation</h2>
+            <div className="justify-center asd mx-5 h-10 flex my-5">
+              <h2 className=" font-black text-2xl  ">Infromation</h2>
             </div>
             <div className="px-5 flex justify-between pb-3">
               <span className="font-bold text-sm">Customer Name:</span>
