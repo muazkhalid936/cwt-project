@@ -1,28 +1,39 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
 
-const Myservices = () => {
+import "./styles.css";
+import ServiceCard from "@/components/ServiceCard";
+const Page = () => {
   return (
     <>
-      <div className="h-auto pb-10" style={{ backgroundColor: "#e8f1f9" }}>
-        <div className="text-center py-20">
-          <div className="font-bold text-3xl">My Services</div>
-          <div className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
-            amet maximus est.
-          </div>
+
+
+<div className="flex flex-col justify-center "         style={{ backgroundColor: "#e8f1f9" }}
+>
+<div className=" py-10">
+        <div className="text-3xl py-3 font-bold text-center">
+          My Services
         </div>
-        <div className="flex  flex-wrap gap-3  justify-center">
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-           <ServiceCard />
-          <ServiceCard />
-          <ServiceCard /> 
+        <div className="text-gray-500 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+          maximus est.
         </div>
       </div>
+      <div className="flex justify-center pb-10">
+
+      <div className="grid lg:grid-cols-3 ml-20  md:grid-cols-2 grid-cols-1 gap-4">
+      <ServiceCard />
+      <ServiceCard />
+      <ServiceCard />
+      <ServiceCard />
+      <ServiceCard />
+      <ServiceCard />
+      </div>
+</div>
+      </div>
+
+     
     </>
   );
 };
 
-export default Myservices;
+export default Page;

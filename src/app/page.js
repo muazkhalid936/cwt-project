@@ -3,7 +3,10 @@ import "./globals.css";
 import Myservices from "@/components/Myservices";
 import FloatingX from "@/components/FloatingX";
 import Call from "@/components/Call";
+import Work from "@/components/work";
 import Blogs from "@/components/Blogs";
+import ImageGallery from "@/components/ImageGallery";
+import Testonomial from "@/components/Testonomial";
 
 export default function Home() {
   return (
@@ -43,8 +46,12 @@ export default function Home() {
       </div>
 
       <About />
-      <Call />
       <Myservices />
+      <Work />
+      <ImageGallery />
+      <Call />
+
+      <Testonomial />
       <Blogs />
     </div>
   );
