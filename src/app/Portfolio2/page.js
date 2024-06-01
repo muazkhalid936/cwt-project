@@ -3,7 +3,7 @@
 import { FaRegEye } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
 import { useState } from "react";
-import "./styles.css"
+import "./styles.css";
 const images = [
   {
     src: "/images/1.jpg",
@@ -128,6 +128,33 @@ const ImageGallery = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div class="flex items-center justify-center my-10 bg-gray-100">
+        <button
+          type="button"
+          class="flex items-center px-4 py-4 hover:bg-blue-500 hover:-translate-y-2 ease-in-out duration-500 bg-orange-500 text-white font-semibold rounded-full shadow-md"
+          disabled
+        >
+          Processing
+          <svg class="animate-spin h-5 w-5 ml-3" viewBox="0 0 24 24">
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="white"
+              stroke-width="4"
+              fill="none"
+              stroke-linecap="round"
+            ></circle>
+            <path
+              d="M12 2a10 10 0 0 1 10 10"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </button>
       </div>
     </div>
   );

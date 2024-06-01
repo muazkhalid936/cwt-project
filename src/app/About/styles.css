@@ -1,0 +1,9 @@
+.aa{
+    width: 400px;
+    height: 70px;
+}
+@media (max-width:1200px){
+.aa{
+    width: 300px;
+}
+}

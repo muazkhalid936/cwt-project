@@ -3,7 +3,7 @@ import "./globals.css";
 import Myservices from "@/components/Myservices";
 import FloatingX from "@/components/FloatingX";
 import Call from "@/components/Call";
-import Work from "@/components/work";
+import Work from "@/components/Work";
 import Blogs from "@/components/Blogs";
 import ImageGallery from "@/components/ImageGallery";
 import Testonomial from "@/components/Testonomial";
