@@ -3,7 +3,7 @@ import "./work.css";
 
 const Work = () => {
   return (
-    <div className="bg flex flex-col items-center justify-center text-black relative h-[50vh]">
+    <div className="bg flex w-full flex-col items-center justify-center text-black relative h-[50vh]">
       <h1 className="text-4xl text-white font-bold text-center">
         Let's Work Together
       </h1>

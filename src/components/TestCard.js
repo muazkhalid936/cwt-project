@@ -13,13 +13,13 @@ const TestimonialCard = ({ imageSrc, name, role, rating, testimonial }) => {
   };
 
   return (
-    <div className="relative bg-white rounded-lg shadow-md max-w-lg mx-auto my-8 p-6 pl-20 h-[30vh] flex items-center">
+    <div className="relative bg-white rounded-lg shadow-md max-w-lg my-8 p-6 pl-20 h-[30vh] flex items-center">
       <div className="absolute -left-10  transform -translate-y-1/2">
         <Image
           src={imageSrc}
           alt={name}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           className=""
         />
       </div>
