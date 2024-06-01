@@ -33,54 +33,103 @@ const Testonomial = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          {isLargeScreen? (
-            <div className="flex gap-20 flex-row">
-              <TestCard
-                imageSrc={"/tes1.jpg"}
-                name={"Rachel Adams"}
-                role={"Regular Clients"}
-                rating={5}
-                testimonial={
-                  "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
-                }
-              />
-              <TestCard
-                imageSrc={"/tes2.jpg"}
-                name={"Rachel Adams"}
-                role={"Regular Clients"}
-                rating={5}
-                testimonial={
-                  "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
-                }
-              />
-             
+          {isLargeScreen ? (
+            <div className="flex gap-20 ease-in-out duration-500 flex-row testimonial-cards">
+              {currentView === 1 && (
+                <>
+                  <TestCard
+                    imageSrc={"/tes1.jpg"}
+                    name={"Rachel Adams"}
+                    role={"Regular Clients"}
+                    rating={5}
+                    testimonial={
+                      "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+                    }
+                  />
+                  <TestCard
+                    imageSrc={"/tes2.jpg"}
+                    name={"Rachel Adams"}
+                    role={"Regular Clients"}
+                    rating={5}
+                    testimonial={
+                      "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+                    }
+                  />
+                </>
+              )}
+              {currentView === 2 && (
+                <>
+                  <TestCard
+                    imageSrc={"/tes2.jpg"}
+                    name={"Rachel Adams"}
+                    role={"Regular Clients"}
+                    rating={5}
+                    testimonial={
+                      "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+                    }
+                  />
+                  <TestCard
+                    imageSrc={"/tes1.jpg"}
+                    name={"Rachel Adams"}
+                    role={"Regular Clients"}
+                    rating={5}
+                    testimonial={
+                      "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+                    }
+                  />
+                </>
+              )}
             </div>
           ) : (
             <div className="flex gap-20 flex-row">
-              <TestCard
-                imageSrc={"/tes1.jpg"}
-                name={"Rachel Adams"}
-                role={"Regular Clients"}
-                rating={5}
-                testimonial={
-                  "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
-                }
-              />
+              {currentView === 1 && (
+                <TestCard
+                  imageSrc={"/tes1.jpg"}
+                  name={"Rachel Adams"}
+                  role={"Regular Clients"}
+                  rating={5}
+                  testimonial={
+                    "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+                  }
+                />
+              )}
+              {currentView === 2 && (
+                <TestCard
+                  imageSrc={"/tes2.jpg"}
+                  name={"Rachel Adams"}
+                  role={"Regular Clients"}
+                  rating={5}
+                  testimonial={
+                    "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+                  }
+                />
+              )}
+              {currentView === 3 && (
+                <TestCard
+                  imageSrc={"/tes1.jpg"}
+                  name={"Rachel Adams"}
+                  role={"Regular Clients"}
+                  rating={5}
+                  testimonial={
+                    "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+                  }
+                />
+              )}
             </div>
           )}
         </div>
         <div className="flex justify-center">
-          {isLargeScreen? (
+          {isLargeScreen ? (
             <div>
               <button
                 className={`w-4 h-4 bf p-2 rounded-full mx-2 ${
-                  currentView === 1? "bg-blue-500" : "bg-gray-400"
+                  currentView === 1 ? "bg-blue-500" : "bg-gray-400"
                 }`}
                 onClick={() => toggle(1)}
               ></button>
               <button
                 className={`w-4 h-4 bf p-2 rounded-full mx-2 ${
-                  currentView === 2? "bg-blue-500" : "bg-gray-400"
+                  currentView === 2 ? "bg-blue-500" : "bg-gray-400"
                 }`}
                 onClick={() => toggle(2)}
               ></button>
@@ -89,19 +138,19 @@ const Testonomial = () => {
             <div>
               <button
                 className={`w-4 h-4 bf p-2 rounded-full mx-2 ${
-                  currentView === 1? "bg-blue-500" : "bg-gray-400"
+                  currentView === 1 ? "bg-blue-500" : "bg-gray-400"
                 }`}
                 onClick={() => toggle(1)}
               ></button>
               <button
                 className={`w-4 h-4 bf p-2 rounded-full mx-2 ${
-                  currentView === 2? "bg-blue-500" : "bg-gray-400"
+                  currentView === 2 ? "bg-blue-500" : "bg-gray-400"
                 }`}
                 onClick={() => toggle(2)}
               ></button>
               <button
                 className={`w-4 h-4 bf p-2 rounded-full mx-2 ${
-                  currentView === 3? "bg-blue-500" : "bg-gray-400"
+                  currentView === 3 ? "bg-blue-500" : "bg-gray-400"
                 }`}
                 onClick={() => toggle(3)}
               ></button>

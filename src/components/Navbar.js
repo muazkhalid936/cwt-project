@@ -1,12 +1,30 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { CgMenuRightAlt } from "react-icons/cg";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isFirstDrawerOpen, setFirstDrawerOpen] = useState(false);
   const [isSecondDrawerOpen, setSecondDrawerOpen] = useState(false);
+  const [isHomeContentVisible, setHomeContentVisible] = useState(false);
+
+  const [isAboutContentVisible, setAboutContentVisible] = useState(false);
+  const [isPageContentVisible, setPageContentVisible] = useState(false);
+  const [isServicesContentVisible, setServicesContentVisible] = useState(false);
+  const [isPortfolioContentVisible, setPortfolioContentVisible] =
+    useState(false);
+  const [isContactContentVisible, setContactContentVisible] = useState(false);
+
+  const toggleAboutContent = () =>
+    setAboutContentVisible(!isAboutContentVisible);
+  const togglePageContent = () => setPageContentVisible(!isPageContentVisible);
+  const toggleServicesContent = () =>
+    setServicesContentVisible(!isServicesContentVisible);
+  const togglePortfolioContent = () =>
+    setPortfolioContentVisible(!isPortfolioContentVisible);
+  const toggleContactContent = () =>
+    setContactContentVisible(!isContactContentVisible);
 
   const toggleFirstDrawer = () => {
     setFirstDrawerOpen(!isFirstDrawerOpen);
@@ -22,6 +40,16 @@ const Navbar = () => {
 
   const closeSecondDrawer = () => {
     setSecondDrawerOpen(false);
+  };
+
+  const toggleHomeContent = () => {
+    setHomeContentVisible(!isHomeContentVisible);
+  };
+
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const toggleMenu = (menu) => {
+    setActiveMenu(activeMenu === menu ? null : menu);
   };
 
   return (
@@ -87,7 +115,6 @@ const Navbar = () => {
                   className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
                   style={{ marginLeft: "-50px", marginBottom: "-30px" }}
                 >
-                  {/* Add the corresponding links here */}
                   <li>
                     <a href="/About">About Us</a>
                   </li>
@@ -100,7 +127,6 @@ const Navbar = () => {
                   <li>
                     <a href="/404">404 Error</a>
                   </li>
-                  {/* Add more items as needed */}
                 </ul>
               </div>
             </li>
@@ -118,14 +144,12 @@ const Navbar = () => {
                   className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
                   style={{ marginLeft: "-50px", marginBottom: "-30px" }}
                 >
-                  {/* Add the corresponding links here */}
                   <li>
                     <a href="/Services">Service</a>
                   </li>
                   <li>
                     <a href="/Service-details">Service Details</a>
                   </li>
-                  {/* Add more items as needed */}
                 </ul>
               </div>
             </li>
@@ -143,7 +167,6 @@ const Navbar = () => {
                   className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
                   style={{ marginLeft: "-50px", marginBottom: "-30px" }}
                 >
-                  {/* Add the corresponding links here */}
                   <li>
                     <a href="/Portfolio">Portfolio</a>
                   </li>
@@ -153,7 +176,6 @@ const Navbar = () => {
                   <li>
                     <a href="/Portfolio-details">Portfolio Details</a>
                   </li>
-                  {/* Add more items as needed */}
                 </ul>
               </div>
             </li>
@@ -171,7 +193,6 @@ const Navbar = () => {
                   className="dropdown-content z-[1] gap-3 menu p-2 text-black shadow bg-base-100 w-52"
                   style={{ marginLeft: "-50px", marginBottom: "-30px" }}
                 >
-                  {/* Add the corresponding links here */}
                   <li>
                     <a href="/BlogPage">Blog</a>
                   </li>
@@ -187,12 +208,16 @@ const Navbar = () => {
                   <li>
                     <a href="/SingleBlog">Blog Details</a>
                   </li>
-                  {/* Add more items as needed */}
                 </ul>
               </div>
             </li>
             <li className="content-center">
-              <a href="/Contact" className="hover:text-orange-500 ease-in-out duration-500">Contact Us</a>
+              <a
+                href="/Contact"
+                className="hover:text-orange-500 ease-in-out duration-500"
+              >
+                Contact Us
+              </a>
             </li>
             <li className="content-center">
               <IoMenu
@@ -217,7 +242,6 @@ const Navbar = () => {
           ></div>
         )}
 
-        {/* First Drawer */}
         <div
           className={`fixed overflow-y-auto top-0 right-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
             isFirstDrawerOpen ? "translate-x-0" : "translate-x-full"
@@ -271,51 +295,159 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Second Drawer */}
         <div
-          className={`fixed overflow-y-auto top-0 left-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
-            isSecondDrawerOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
-          style={{ width: "80%", maxWidth: "300px", transition: "0.5s" }}
-        >
-          <div>
-            <div className="text-center my-8">
-              <a href="/" className="font-black">
-                <p>
-                  <span className="text-2xl text-orange-500">CW</span>
-                  <span className="text-2xl">T</span>
-                </p>
-              </a>
-            </div>
-            <ul className="flex flex-col justify-evenly font-bold text-base">
-              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300">
-                Home
-              </li>
-              <hr />
-              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300">
-                About us
-              </li>
-              <hr />
-              <li className="content-center active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ml-2 my-3">
-                Page
-              </li>
-              <hr />
-              <li className="active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 content-center ml-2 my-3">
-                Services
-              </li>
-              <hr />
-              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300">
-                Portfolio
-              </li>
-              <hr />
-              <li className="content-center active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 ml-2 my-3">
-                Contact Us
-              </li>
-              <hr />
-            </ul>
-          </div>
+      className={`fixed overflow-y-auto top-0 left-0 h-full bg-white shadow-lg transition-transform transform z-50 ${
+        isSecondDrawerOpen ? 'translate-x-0' : '-translate-x-full'
+      }`}
+      style={{ width: '80%', maxWidth: '300px', transition: '0.5s' }}
+    >
+      <div>
+        <div className="text-center my-8">
+          <a href="/" className="font-black">
+            <p>
+              <span className="text-2xl text-orange-500">CW</span>
+              <span className="text-2xl">T</span>
+            </p>
+          </a>
         </div>
-
+        <ul className="flex list-none flex-col justify-evenly font-bold text-base">
+          <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+            <a onClick={() => toggleMenu('home')} href="#">
+              Home
+            </a>
+          </li>
+          {activeMenu === 'home' && (
+            <ul className="ml-10 ease-in-out duration-500">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="#">Home Style 01</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="#">Home Style 02</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="#">Home Style 03</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="#">Home Style 04</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="#">Home Style 05</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="#">Home Style 06</a>
+              </li>
+            </ul>
+          )}
+          <hr />
+          <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+            <a onClick={() => toggleMenu('about')} href="About">
+              About Us
+            </a>
+          </li>
+          <hr />
+          <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+            <a onClick={() => toggleMenu('page')} href="#">
+              Page
+            </a>
+          </li>
+          {activeMenu === 'page' && (
+            <ul className="ml-10 ease-in-out duration-500">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/About">About Us</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/Contact">Contact Us</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/Pricing">Pricing Plan</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/404">404 Error</a>
+              </li>
+            </ul>
+          )}
+          <hr />
+          <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+            <a onClick={() => toggleMenu('services')} href="#">
+              Services
+            </a>
+          </li>
+          {activeMenu === 'services' && (
+            <ul className="ml-10 ease-in-out duration-500">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/Services">Services</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="Services-details">Services Details</a>
+              </li>
+            </ul>
+          )}
+          <hr />
+          <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+            <a onClick={() => toggleMenu('portfolio')} href="#">
+              Portfolio
+            </a>
+          </li>
+          {activeMenu === 'portfolio' && (
+            <ul className="ml-10 ease-in-out duration-500">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="Portfolio">Portfolio</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="Portfolio2">Portfolio 2 Columns</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="Portfolio-details">Portfolio Details</a>
+              </li>
+            </ul>
+          )}
+          <hr />
+          <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+            <a onClick={() => toggleMenu('contact')} href="#">
+              Blog
+            </a>
+          </li>
+          {activeMenu === 'contact' && (
+            <ul className="ml-10 ease-in-out duration-500">
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="SingleBlog">Blog</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/BlogGrid">Blog Grid</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/BlogLeft">Blog Left Sidebar</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/BlogRight">Blog Right Sidebar</a>
+              </li>
+              <hr />
+              <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+                <a href="/SingleBlog">Blog Details</a>
+              </li>
+            </ul>
+          )}
+          <hr />
+          <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
+            <a href="/Contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
         <div className="block mr-10 lg:hidden">
           <CgMenuRightAlt
             className="text-3xl cursor-pointer"

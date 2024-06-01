@@ -2,3 +2,7 @@
   .bf{
 border: 1px solid orange;
   }
+
+  .testimonial-cards {
+    transition: transform 0.5s ease-in-out;
+  }
