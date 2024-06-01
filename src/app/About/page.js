@@ -1,10 +1,9 @@
 import React from "react";
 
 import "./styles.css";
-import ServiceCard from "@/components/ServiceCard";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
-import MySkills from "@/components/MySkills";
+import Call from "@/components/Call";
+import Testonomial from "@/components/Testonomial";
 const Page = () => {
   return (
     <>
@@ -26,6 +25,8 @@ const Page = () => {
 
 
         <MySkills />
+     <Call />
+     <Testonomial />
       </div>
     </>
   );

@@ -1,0 +1,24 @@
+.asd {
+  transition: 0.5s ;
+}
+
+.asd:hover {
+  transform: translateY(-12px);
+}
+.btm{
+    border-bottom: 1px dashed rgb(214, 208, 208);
+}
+.asd:hover .ss {
+  background-color: #f97316;
+  transition: 0.5s; 
+}
+.ss{
+background-color: #FFEDD5	;
+    transition: 0.5;
+}
+.asd:hover .pp{
+    color: white;
+}
+.pp{
+    transition: 0.5s;
+}
