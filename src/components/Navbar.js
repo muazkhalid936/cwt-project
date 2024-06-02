@@ -55,6 +55,7 @@ const Navbar = () => {
   return (
     <>
       <div className="pt-10 pl-10 lg:pl-4 bg-transparent px-3 xl:px-32  2xl:px-60 flex justify-between pb-4">
+       
         <div>
           <a href="/" className="font-black">
             <p>

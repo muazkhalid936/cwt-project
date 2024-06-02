@@ -7,7 +7,7 @@ import Work from "@/components/Work";
 import Blogs from "@/components/Blogs";
 import ImageGallery from "@/components/ImageGallery";
 import Testonomial from "@/components/Testonomial";
-import Homegallery from "@/components/homegallery";
+import Homegallery from "@/components/Homegallery";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       </div>
       <div
         style={{ backgroundColor: "#e8f1f9" }}
-        className="flex flex-col lg:flex-row-reverse px-3 lg:px-0 xl:px-32 2xl:px-60 gap-0 w-full justify-between"
+        className="flex hero-con  flex-col lg:flex-row-reverse px-3 lg:px-0 xl:px-32 2xl:px-60 gap-0 w-full justify-between"
       >
         <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 lg:mt-0">
           <img src="/man.png" className="h-96 img-hero mx-auto" />
