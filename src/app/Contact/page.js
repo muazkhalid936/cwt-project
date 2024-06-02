@@ -9,7 +9,7 @@ const Page = () => {
     <>
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
-          <div className="text-center text-5xl font-bold">Contact Us</div>
+          <div className="text-center text-5xl fontt font-bold">Contact Us</div>
           <div className="flex justify-center gap-3 mt-10">
             <a href="/" className="font-bold">
               Home
@@ -63,7 +63,7 @@ const Page = () => {
         <div className=" flex justify-center mx-auto">
           <div className="comment px-3 py-10 w-full mx-auto mt-5 lg:mx-0">
             <div className="text-center flex flex-col">
-              <span className=" text-center font-bold text-4xl ">
+              <span className=" text-center font-bold fontt text-4xl ">
                 Get In Touch
               </span>
               <span className=" my-5 text-center text-sm ">

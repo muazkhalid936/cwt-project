@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className=" lg:text-left w-full px-20 lg:px-1 ">
           <h1 className="text-3xl font-bold text-orange-500 fontt ">Muaz Khalid</h1>
-          <p className="py-6 fontt font-medium font-bold text-3xl">
+          <p className="py-6 fontt font-bold text-3xl">
             A professional web designer & developer
           </p>
           <p className=" leading-loose">

@@ -5,13 +5,13 @@ import { IoMailOutline } from "react-icons/io5";
 import { CiHeadphones } from "react-icons/ci";
 import "./styles.css";
 import Myservices from "@/components/Myservices";
-import ServiceCard from "@/components/ServiceCard";
+import Service from "@/components/Service";
 const Page = () => {
   return (
     <>
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
-          <div className="text-center text-5xl font-bold">Services</div>
+          <div className="text-center fontt text-5xl font-bold">Services</div>
           <div className="flex justify-center gap-3 mt-10">
             <a href="/" className="font-bold">
               Home
@@ -22,15 +22,15 @@ const Page = () => {
         </div>
       </div>
 
-<div className="flex justify-center">
+<div className="flex my-20 justify-center">
 
       <div className="grid lg:grid-cols-3 ml-20  md:grid-cols-2 grid-cols-1 gap-4">
-      <ServiceCard />
-      <ServiceCard />
-      <ServiceCard />
-      <ServiceCard />
-      <ServiceCard />
-      <ServiceCard />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
 </div>
       </div>
 

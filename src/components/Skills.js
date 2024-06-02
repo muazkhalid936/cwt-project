@@ -12,9 +12,15 @@ const skills = [
 const Skills = () => {
   return (
     <div
-      className="container mx-auto p-8 "
+      className=" w-full p-8 "
       style={{ backgroundColor: "#e8f1f9" }}
     >
+<div className="flex justify-center flex-col text-center">
+<p className="fontt text-4xl font-black">My Skills</p>
+<p className="text-sm pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet maximus est</p>
+  </div>
+
+
       <div
         className="bg-blue-50 p-8 mx-20 shadow-2xl rounded-lg"
         style={{ backgroundColor: "#e8f1f9" }}

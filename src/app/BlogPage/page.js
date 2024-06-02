@@ -11,7 +11,7 @@ const Page = () => {
     <>
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
-          <div className="text-center text-5xl font-bold">News Feed</div>
+          <div className="text-center text-5xl font-bold fontt">News Feed</div>
           <div className="flex justify-center gap-3 mt-10">
             <a href="/" className="font-bold">
               Home

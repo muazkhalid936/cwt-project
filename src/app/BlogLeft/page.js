@@ -10,7 +10,7 @@ const Page = () => {
     <>
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
-          <div className="text-center text-5xl font-bold">
+          <div className="text-center fontt text-5xl font-bold">
             Blog Left Sidebar
           </div>
           <div className="flex justify-center gap-3 mt-10">

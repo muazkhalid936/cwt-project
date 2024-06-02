@@ -61,7 +61,24 @@ const ImageGallery = () => {
       : images.filter((image) => image.categories.includes(filter));
 
   return (
-    <div className="p-5">
+
+
+  <>
+    <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
+        <div className="flex flex-col justify-center">
+          <div className="text-center text-5xl font-bold">My Portfolio</div>
+          <div className="flex justify-center gap-3 mt-10">
+            <a href="/" className="font-bold">
+              Home
+            </a>
+            <span>/</span>
+            <span className="font-bold text-gray-500">Portfolio</span>
+          </div>
+        </div>
+      </div>
+  
+  
+  <div className="p-5">
       <div className="flex justify-center">
         <div className="mb-5 text-center border px-10 py-2 rounded-full">
           <button
@@ -135,6 +152,7 @@ const ImageGallery = () => {
         ))}
       </div>
     </div>
+  </>
   );
 };
 

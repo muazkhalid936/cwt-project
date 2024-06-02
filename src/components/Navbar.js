@@ -90,7 +90,7 @@ const Navbar = () => {
                   role="button"
                   className="m-1 hover:text-orange-500"
                 >
-                  Home +
+                 <a href="/">Home +</a> 
                 </div>
                 <ul
                   tabIndex={0}
@@ -104,21 +104,23 @@ const Navbar = () => {
                     <a href="/Style02">Home Style 02</a>
                   </li>
                   <li>
-                    <a href="/Style03">Home Style 03</a>
+                    <a href="#">Home Style 03</a>
                   </li>
                   <li>
-                    <a href="/Style04">Home Style 04</a>
+                    <a href="#">Home Style 04</a>
                   </li>
                   <li>
-                    <a href="/Syle05">Home Style 05</a>
+                    <a href="#">Home Style 05</a>
                   </li>
                   <li>
-                    <a href="/Style06">Home Style 06</a>
+                    <a href="#">Home Style 06</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li className="content-center">About us</li>
+            <li className="content-center">
+              <a href="/About">About us</a>
+              </li>
             <li className="content-center">
               <div className="dropdown p-0 m-0 dropdown-hover">
                 <div
@@ -330,14 +332,14 @@ const Navbar = () => {
         </div>
         <ul className="flex list-none flex-col justify-evenly font-bold text-base">
           <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
-            <a onClick={() => toggleMenu('home')} href="#">
+            <a onClick={() => toggleMenu('home')} href="/">
               Home
             </a>
           </li>
           {activeMenu === 'home' && (
             <ul className="ml-10 ease-in-out duration-500">
               <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">
-                <a href="#">Home Style 01</a>
+                <a href="Style02">Home Style 01</a>
               </li>
               <hr />
               <li className="content-center ml-2 my-3 active:text-orange-500 hover:text-orange-500 ease-in-out duration-300 cursor-pointer">

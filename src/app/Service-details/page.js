@@ -9,7 +9,7 @@ const Page = () => {
     <>
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
-          <div className="text-center text-5xl font-bold">
+          <div className="text-center fontt text-5xl font-black">
             Our Services Details
           </div>
           <div className="flex justify-center gap-3 mt-10">
@@ -17,7 +17,7 @@ const Page = () => {
               Home
             </a>
             <span>/</span>
-            <span className="font-medium">Services Details</span>
+            <span className="font-medium fontt">Services Details</span>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Page = () => {
             </div>
 
             <div className="mx-5">
-              <p className="text-4xl my-5  px-0 font-bold">Web Development</p>
+              <p className="text-4xl my-5 fontt  px-0 font-bold">Web Development</p>
 
               <p className="mt-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nam
@@ -42,7 +42,7 @@ const Page = () => {
                 iste modi sed ut dolorum laborum minima Suscipit rem dolor ipsam
                 unde quos Magnam deleniti aut odio dolorem.
               </p>
-              <p className="text-4xl my-5 px-0 font-bold">How To Work?</p>
+              <p className="text-4xl my-5 px-0 fontt font-bold">How To Work?</p>
 
               <p className="mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nam
@@ -65,7 +65,7 @@ const Page = () => {
                 </li>
               </ul>
 
-              <p className="text-4xl my-5 px-0 font-bold">Why Choose Us?</p>
+              <p className="text-4xl my-5 px-0 fontt font-bold">Why Choose Us?</p>
 
               <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
