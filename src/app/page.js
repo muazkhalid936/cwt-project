@@ -25,7 +25,7 @@ export default function Home() {
         className="flex hero-con  flex-col lg:flex-row-reverse px-3 lg:px-0 xl:px-32 2xl:px-60 gap-0 w-full justify-between"
       >
         <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 lg:mt-0">
-          <img src="/man.png" className="h-96 img-hero mx-auto" />
+          <img src="/man.png" className=" img-hero mx-auto" />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <div className="mx-4 lg:mx-2">

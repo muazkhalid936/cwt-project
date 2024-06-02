@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <>
       <div
-        className="flex flex-col justify-center "
+        className="flex w-full flex-col justify-center "
         style={{ backgroundColor: "#e8f1f9" }}
       >
         <div className=" py-10">

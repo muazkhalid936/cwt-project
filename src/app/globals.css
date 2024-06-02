@@ -19,6 +19,7 @@
   padding-top: 100px;
 }
 
+
 .robot{
   font-family: 'Roboto', sans-serif;
 }
@@ -64,15 +65,24 @@
  
 }
 
-
+@media(max-width:500px){
+  .hero-con{
+    height: 700px;
+    width: 400px;
+  }
+}
 @media (max-width:770px){
   .img-hero{
     height: 300px;
     margin-bottom: 0px;
+  
+  
   }
   .hero-con{
-    height: 80vh;
+    height: 120vh;
+    width: full;
   }
+  
 }
 
 .font-roboto {
@@ -158,9 +168,11 @@
   font-style: normal;
 }
 
+
 .call {
   height: 450px;
 }
+
 .call-img {
   height: 450px;
   width: 300px;
