@@ -7,10 +7,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaRegHandPointRight } from "react-icons/fa6";
 
 import "./styles.css";
+import Navbar from "@/components/Navbar";
 
 const Page = () => {
   return (
     <>
+      <Navbar />
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
           <div className="text-center text-5xl font-bold">
@@ -58,50 +60,63 @@ const Page = () => {
               <div className="mt-10 flex flex-col gap-5 mx-10">
                 <div className=" flex gap-3 mx-2">
                   <div>
-                    <FaRegHandPointRight  className="text-orange-500 text-3xl"/>
+                    <FaRegHandPointRight className="text-orange-500 text-3xl" />
                   </div>
-                  <div className="mt-1  text-gray-500 font-medium">Easy color change with SASS or Variable</div>
+                  <div className="mt-1  text-gray-500 font-medium">
+                    Easy color change with SASS or Variable
+                  </div>
                 </div>
                 <div className=" flex gap-3 mx-2">
                   <div>
-                    <FaRegHandPointRight  className="text-orange-500 text-3xl"/>
+                    <FaRegHandPointRight className="text-orange-500 text-3xl" />
                   </div>
-                  <div className="mt-1  text-gray-500 font-medium">Huge set of UI elements and blocks</div>
+                  <div className="mt-1  text-gray-500 font-medium">
+                    Huge set of UI elements and blocks
+                  </div>
                 </div>
                 <div className=" flex gap-3 mx-2">
                   <div>
-                    <FaRegHandPointRight  className="text-orange-500 text-3xl"/>
+                    <FaRegHandPointRight className="text-orange-500 text-3xl" />
                   </div>
-                  <div className="mt-1  text-gray-500 font-medium">Compatible Browsers:IE11+, Firefox, Safari, Opera, Chrome, Edge</div>
+                  <div className="mt-1  text-gray-500 font-medium">
+                    Compatible Browsers:IE11+, Firefox, Safari, Opera, Chrome,
+                    Edge
+                  </div>
                 </div>
                 <div className=" flex gap-3 mx-2">
                   <div>
-                    <FaRegHandPointRight  className="text-orange-500 text-3xl"/>
+                    <FaRegHandPointRight className="text-orange-500 text-3xl" />
                   </div>
-                  <div className="mt-1  text-gray-500 font-medium"> Images With jQuery Inner Zoom, outer Zoom</div>
+                  <div className="mt-1  text-gray-500 font-medium">
+                    {" "}
+                    Images With jQuery Inner Zoom, outer Zoom
+                  </div>
                 </div>
                 <div className=" flex gap-3 mx-2">
                   <div>
-                    <FaRegHandPointRight  className="text-orange-500 text-3xl"/>
+                    <FaRegHandPointRight className="text-orange-500 text-3xl" />
                   </div>
-                  <div className="mt-1  text-gray-500 font-medium"> Unlimited Category Page Variations</div>
+                  <div className="mt-1  text-gray-500 font-medium">
+                    {" "}
+                    Unlimited Category Page Variations
+                  </div>
                 </div>
               </div>
             </div>
 
-         
-
             <div className="mx-5">
               <p className="my-10 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis omnis sunt tempore tempora quo voluptates aperiam reiciendis distinctio quaerat animi modi! Tenetur magnam eius alias dicta cupiditate modi corrupti quidem aut qui natus voluptas sit. Vel aliquam non aliquid incidunt praesentium dolor odio minus corporis consectetur eius consequatur deleniti aperiam magni saepe ipsum iste quam quas illum enim animi quae iusto obcaecati pariatur placeat Quos et qui laborum hic repellendus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                omnis sunt tempore tempora quo voluptates aperiam reiciendis
+                distinctio quaerat animi modi! Tenetur magnam eius alias dicta
+                cupiditate modi corrupti quidem aut qui natus voluptas sit. Vel
+                aliquam non aliquid incidunt praesentium dolor odio minus
+                corporis consectetur eius consequatur deleniti aperiam magni
+                saepe ipsum iste quam quas illum enim animi quae iusto obcaecati
+                pariatur placeat Quos et qui laborum hic repellendus.
               </p>
             </div>
-
-           
           </div>
-         
-
-         
         </div>
 
         <div className=" w-full  lg:w-port2 px-5  lg:px-0 flex gap-2 flex-col ">

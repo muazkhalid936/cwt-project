@@ -3,10 +3,12 @@ import BlogGridCard from "@/components/BlogGridCard";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import Pagination from "@/components/Pagination";
+import Navbar from "@/components/Navbar";
 
 const Page = () => {
   return (
     <>
+    <Navbar />
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
           <div className="text-center text-5xl font-bold">Blog Details</div>

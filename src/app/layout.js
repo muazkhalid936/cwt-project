@@ -10,11 +10,11 @@ export const metadata = {
   description: "Majo Apps",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children,showNavbar }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Navbar />
+      {showNavbar && <Navbar />}
         {children}
         <Footer />
       </body>
