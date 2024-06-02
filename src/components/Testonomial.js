@@ -8,18 +8,15 @@ const Testonomial = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
-    // Function to handle window resize
+  
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
     };
 
-    // Set initial value
     handleResize();
 
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
