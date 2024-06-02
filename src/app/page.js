@@ -12,10 +12,6 @@ import RootLayout from "./layout";
 
 export default function Home() {
   return (
-
-
-    
-
     <div className="">
       <div className="absolute ml-10 mt-20  lg:-mt-20 2xl:-mt-40 left-0 top-1/2 transform -translate-y-1/2">
         <FloatingX />
@@ -55,12 +51,11 @@ export default function Home() {
       <Myservices />
       <Work />
       <ImageGallery />
-     
 
+      <Call />
       <Testonomial />
       <Blogs />
       <Homegallery />
     </div>
-
   );
 }

@@ -22,7 +22,7 @@ const Skills = () => {
 
 
       <div
-        className="bg-blue-50 p-8 mx-20 shadow-2xl rounded-lg"
+        className="bg-blue-50 p-8 mx-1 lg:mx-20 shadow-2xl rounded-lg"
         style={{ backgroundColor: "#e8f1f9" }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

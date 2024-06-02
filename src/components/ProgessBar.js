@@ -15,6 +15,7 @@ const ProgressBar = ({ skill, percentage }) => {
       progressBarRef.current.style.width = `${percentage}%`;
     }
   }, [inView, percentage]);
+  
 
   return (
     <div ref={ref} className="mb-4" style={{ backgroundColor: "#e8f1f9" }}  >
