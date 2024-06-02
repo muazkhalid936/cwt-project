@@ -22,18 +22,50 @@
 .img-hero {
   height: 600px;
 }
+
+@media (max-width:720px){
+  .hero-con{
+    width: 100vh;
+  }
+
+}
 @media (max-width: 640px) {
-  .img-hero {
-    height: 370px;
-    margin-bottom: 50px;
+
+  .hero-con{
+    height: 120vh;
   }
   .service-card {
     width: 75%;
   }
 }
+@media(max-width:1020px){
+  .hero-con{
+   height: 110vh;
+  }
+  .img-hero{
+    margin-bottom: -200px;
+  }
+}
 @media (max-width: 1280px) {
   .asd {
     height: 450px;
+  }
+ 
+  .img-hero{
+    height: 500px;
+    margin-bottom: -100px;
+  }
+ 
+}
+
+
+@media (max-width:770px){
+  .img-hero{
+    height: 300px;
+    margin-bottom: 0px;
+  }
+  .hero-con{
+    height: 80vh;
   }
 }
 
