@@ -7,7 +7,9 @@ const page = () => {
         <div className="flex justify-center">
           <img src="/error.png" />
         </div>
-        <div className=" text-red-500 text-5xl font-bold">Sorry !</div>
+        <div className=" text-red-500 text-5xl font-bold">
+          Sorry !
+        </div>
         <div className="text-5xl font-bold">This page can't be found.</div>
         <div className="">
           The Page you're looking for isn't available. Try with another page or

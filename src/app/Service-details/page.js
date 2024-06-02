@@ -3,12 +3,10 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
 import "./styles.css";
-import Navbar from "@/components/Navbar";
 
 const Page = () => {
   return (
     <>
-    <Navbar />
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
           <div className="text-center text-5xl font-bold">

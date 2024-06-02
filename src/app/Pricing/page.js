@@ -5,11 +5,9 @@ import { IoMailOutline } from "react-icons/io5";
 import { CiHeadphones } from "react-icons/ci";
 import "./styles.css";
 import PricingCard from "@/components/PricingCard";
-import Navbar from "@/components/Navbar";
 const Page = () => {
   return (
     <>
-    <Navbar />
       <div className="h-2/3 py-36" style={{ backgroundColor: "#e8f1f9" }}>
         <div className="flex flex-col justify-center">
           <div className="text-center text-5xl font-bold">Pricing Plane</div>

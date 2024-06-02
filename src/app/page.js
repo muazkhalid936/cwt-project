@@ -8,14 +8,10 @@ import Blogs from "@/components/Blogs";
 import ImageGallery from "@/components/ImageGallery";
 import Testonomial from "@/components/Testonomial";
 import Homegallery from "@/components/Homegallery";
-import Navbar from "@/components/Navbar";
 
-export default function Home(showNavbar=true) {
+export default function Home() {
   return (
-
-
     <div className="">
-      <Navbar />
       <div className="absolute ml-10 mt-20  lg:-mt-20 2xl:-mt-40 left-0 top-1/2 transform -translate-y-1/2">
         <FloatingX />
       </div>
