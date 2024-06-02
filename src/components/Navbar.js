@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { CgMenuRightAlt } from "react-icons/cg";
 import Image from "next/image";
-
+import "@/app/globals.css"
 const Navbar = () => {
   const [isFirstDrawerOpen, setFirstDrawerOpen] = useState(false);
   const [isSecondDrawerOpen, setSecondDrawerOpen] = useState(false);
@@ -52,9 +52,29 @@ const Navbar = () => {
     setActiveMenu(activeMenu === menu ? null : menu);
   };
 
+
+
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="pt-10 pl-10 lg:pl-4 bg-transparent px-3 xl:px-32  2xl:px-60 flex justify-between pb-4">
+    <div className={`fixed inset-x-0 top-0 z-50 bg-transparent px-3 xl:px-32 2xl:px-60 flex justify-between py-4 ${isFixed? 'navbar-fixed' : ''}`}>
        
         <div>
           <a href="/" className="font-black">
