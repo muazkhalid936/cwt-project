@@ -5,15 +5,24 @@ import "./testonomial.css";
 
 const Testonomial = () => {
   const [currentView, setCurrentView] = useState(1);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
-
-  const handleResize = () => {
-    setIsLargeScreen(window.innerWidth >= 1024);
-  };
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
+    // Function to handle window resize
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const toggle = (view) => {

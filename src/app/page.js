@@ -7,6 +7,7 @@ import Work from "@/components/Work";
 import Blogs from "@/components/Blogs";
 import ImageGallery from "@/components/ImageGallery";
 import Testonomial from "@/components/Testonomial";
+import Homegallery from "@/components/homegallery";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
 
       <Testonomial />
       <Blogs />
+      <Homegallery />
     </div>
   );
 }

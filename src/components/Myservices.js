@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles.css";
-import ServiceCard from "@/components/ServiceCard";
+import Service from "@/components/Service";
 const Page = () => {
   return (
     <>
@@ -17,13 +17,14 @@ const Page = () => {
           </div>
         </div>
         <div className="flex justify-center pb-10">
-          <div className="grid lg:grid-cols-3 ml-20  md:grid-cols-2 grid-cols-1 gap-4">
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+          <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-4">
+            <Service />
+            <Service />
+            <Service />
+            <Service />
+            <Service />
+            <Service />
+            
           </div>
         </div>
       </div>
