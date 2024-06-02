@@ -12,7 +12,7 @@ const About = () => {
         <div className="grid content-center  w-full">
           <img src="/about.jpg"  className="lg:px-20 px-4 lg:ml-0"/>
         </div>
-        <div className=" lg:text-left w-full px-20 lg:px-1 ">
+        <div className=" lg:text-left w-full  px-4 xl:px-20 lg:px-1 ">
           <h1 className="text-3xl font-bold mt-4 lg:mt-32 text-orange-500 fontt ">Muaz Khalid</h1>
           <p className="py-6 fontt font-bold text-3xl">
             A professional web designer & developer

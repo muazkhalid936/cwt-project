@@ -55,7 +55,7 @@ export default function Home() {
       <Myservices />
       <Work />
       <ImageGallery />
-      <Call />
+     
 
       <Testonomial />
       <Blogs />
