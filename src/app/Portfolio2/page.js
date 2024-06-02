@@ -145,7 +145,7 @@ const ImageGallery = () => {
         ))}
       </div>
 
-      <div class="flex items-center justify-center my-10 bg-gray-100">
+      <div class="flex items-center justify-center my-10 ">
         <button
           type="button"
           class="flex items-center px-4 py-4 hover:bg-blue-500 hover:-translate-y-2 ease-in-out duration-500 bg-orange-500 text-white font-semibold rounded-full shadow-md"

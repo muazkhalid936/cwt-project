@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import TestCard from "./TestCard";
 import "./testonomial.css";
@@ -8,7 +8,6 @@ const Testonomial = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
-  
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
     };
