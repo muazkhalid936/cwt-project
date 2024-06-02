@@ -4,7 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { CgMenuRightAlt } from "react-icons/cg";
 import Image from "next/image";
 import "@/app/globals.css"
-const Navbar = () => {
+const Navbar2 = () => {
   const [isFirstDrawerOpen, setFirstDrawerOpen] = useState(false);
   const [isSecondDrawerOpen, setSecondDrawerOpen] = useState(false);
   const [isHomeContentVisible, setHomeContentVisible] = useState(false);
@@ -78,10 +78,10 @@ const Navbar = () => {
        
         <div>
           <a href="/" className="font-black">
-           <img src="/logo.png"/>
+           <img src="/white-logo.png"/>
           </a>
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex text-white">
           <ul className="flex justify-evenly gap-5 font-medium text-sm">
             <li className="content-center">
               <div className="dropdown p-0 m-0 dropdown-hover">
@@ -104,16 +104,16 @@ const Navbar = () => {
                     <a href="/Style02">Home Style 02</a>
                   </li>
                   <li>
-                    <a href="/Style03">Home Style 03</a>
+                    <a>Home Style 03</a>
                   </li>
                   <li>
-                    <a href="/Style04">Home Style 04</a>
+                    <a>Home Style 04</a>
                   </li>
                   <li>
-                    <a href="/Syle05">Home Style 05</a>
+                    <a>Home Style 05</a>
                   </li>
                   <li>
-                    <a href="/Style06">Home Style 06</a>
+                    <a>Home Style 06</a>
                   </li>
                 </ul>
               </div>
@@ -477,4 +477,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;

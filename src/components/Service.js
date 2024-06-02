@@ -12,7 +12,7 @@ function Service() {
         <FaLaptopCode  className="text-8xl laptop text-orange-500"/>{" "}
       </div>
 
-      <h2>Web Design</h2>
+      <h2 className="fontt font-bold">Web Design</h2>
       <p>
         In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at
         odio a felis commodo pulvinar quis eu neque.

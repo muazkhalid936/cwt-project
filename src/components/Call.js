@@ -9,7 +9,7 @@ const Call = () => {
     
     <div className="bg-black call flex   p-0 lg:pl-60 items-center">
       <div className="text-center textarea1">
-        <div className="py-10 text-3xl text-white">Any Question You Have</div>
+        <div className="py-10 text-3xl text-white fontt">Any Question You Have</div>
         <div className="font-bold  text-6xl lg:text-8xl md:text-7xl text-white">
           +158 862 1252
         </div>

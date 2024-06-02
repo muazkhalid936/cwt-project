@@ -8,9 +8,14 @@ import Blogs from "@/components/Blogs";
 import ImageGallery from "@/components/ImageGallery";
 import Testonomial from "@/components/Testonomial";
 import Homegallery from "@/components/Homegallery";
+import RootLayout from "./layout";
 
 export default function Home() {
   return (
+
+
+    
+
     <div className="">
       <div className="absolute ml-10 mt-20  lg:-mt-20 2xl:-mt-40 left-0 top-1/2 transform -translate-y-1/2">
         <FloatingX />
@@ -24,7 +29,7 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <div className="mx-4 lg:mx-2">
-            <span className="text-xl font-roboto block mb-2">
+            <span className="text-xl fontt  block mb-2">
               Hello, My name is Muaz Khalid
             </span>
             <span className="text-3xl lg:text-4xl font-black block mb-2">
@@ -56,5 +61,6 @@ export default function Home() {
       <Blogs />
       <Homegallery />
     </div>
+
   );
 }

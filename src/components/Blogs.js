@@ -6,7 +6,7 @@ const Blogs = () => {
     <>
       <div className="h-auto">
         <div className="text-center py-20">
-          <p className="text-3xl mb-2 font-bold">Latest Blogs</p>
+          <p className="text-3xl mb-2 fontt font-bold">Latest Blogs</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
             amet maximus est.

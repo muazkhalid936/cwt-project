@@ -10,7 +10,7 @@ const Page = () => {
         style={{ backgroundColor: "#e8f1f9" }}
       >
         <div className=" py-10">
-          <div className="text-3xl py-3 font-bold text-center">My Services</div>
+          <div className="text-3xl py-3 font-bold text-center fontt">My Services</div>
           <div className="text-gray-500 text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
             amet maximus est.

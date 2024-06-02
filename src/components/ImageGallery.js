@@ -48,7 +48,7 @@ const ImageGallery = () => {
   return (
     <div className="p-5 py-20">
       <div className=" py-5">
-        <div className="text-3xl py-3 font-bold text-center">
+        <div className="text-3xl fontt py-3 font-bold text-center">
           My Latest Portfolio
         </div>
         <div className="text-gray-500 text-center">

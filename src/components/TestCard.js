@@ -24,7 +24,7 @@ const TestimonialCard = ({ imageSrc, name, role, rating, testimonial }) => {
         />
       </div>
       <div>
-        <h2 className="text-lg font-bold">{name}</h2>
+        <h2 className="text-lg fontt font-bold">{name}</h2>
         <p className="text-gray-500 mb-2">{role}</p>
         <div className="text-yellow-500 mb-2">{renderStars(rating)}</div>
         <p className="text-gray-700">{testimonial}</p>

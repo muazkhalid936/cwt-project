@@ -3,8 +3,8 @@ import "./work.css";
 
 const Work = () => {
   return (
-    <div className="bg flex w-full flex-col items-center justify-center text-black relative h-[50vh]">
-      <h1 className="text-4xl text-white font-bold text-center">
+    <div className="bg flex w-full flex-col items-center justify-center text-black gap-4 relative h-[50vh]">
+      <h1 className="text-4xl text-white fontt font-bold text-center">
         Let's Work Together
       </h1>
       <p className="text-xl text-gray-300 text-center">

@@ -33,7 +33,7 @@ const Testonomial = () => {
     <div className="py-20" style={{ backgroundColor: "#e8f1f9" }}>
       <div className="container mx-auto px-4">
         <div className="py-10">
-          <div className="text-3xl py-3 font-bold text-center">
+          <div className="text-3xl fontt py-3 font-bold text-center">
             My Testonomial
           </div>
           <div className="text-gray-500 text-center">

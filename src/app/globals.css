@@ -19,6 +19,12 @@
   padding-top: 100px;
 }
 
+.robot{
+  font-family: 'Roboto', sans-serif;
+}
+.fontt{
+  font-family: 'Red Hat Mono', monospace;
+}
 .img-hero {
   height: 600px;
 }
@@ -167,4 +173,22 @@
 .imggallery {
   width: 400px;
   height: 275px;
+}
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.TypingEffect-cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+
+.style6{
+  height: 70vh;
 }
