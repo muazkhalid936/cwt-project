@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./styles.css";
+
 import Service from "@/components/Service";
 const Page = () => {
   return (
