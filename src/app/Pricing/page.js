@@ -27,7 +27,7 @@ const Page = () => {
         </div>
 <div className="flex justify-center">
 
-        <div className="py-10 grid  lg:grid-cols-3 grid-cols-1 gap-3 ">
+        <div className="py-10 grid  lg:grid-cols-3 grid-cols-1  gap-5 lg:gap-3 ">
          
          
 
